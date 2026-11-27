@@ -1,0 +1,6 @@
+# MULTI variant build (protocol v4: one watch, several ESP32 edges).
+# Shared code in source/, variant constants in this folder.
+# Paths are relative to THIS file (variants/multi/).
+project.manifest = manifest-multi.xml
+base.sourcePath = ../../source;.
+base.resourcePath = ../../resources

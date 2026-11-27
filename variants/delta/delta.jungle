@@ -1,0 +1,6 @@
+# DELTA variant build.
+# Shared code in source/, variant constants in this folder.
+# Paths are relative to THIS file (variants/delta/).
+project.manifest = manifest-delta.xml
+base.sourcePath = ../../source;.
+base.resourcePath = ../../resources

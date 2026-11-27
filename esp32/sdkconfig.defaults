@@ -1,0 +1,30 @@
+# --- Bluetooth: BLE only, NimBLE stack (lightweight, suits the ESP32-CAM) ---
+CONFIG_BT_ENABLED=y
+CONFIG_BT_NIMBLE_ENABLED=y
+
+# Roles: peripheral + broadcaster only (smaller footprint, no central/observer)
+CONFIG_BT_NIMBLE_ROLE_PERIPHERAL=y
+CONFIG_BT_NIMBLE_ROLE_BROADCASTER=y
+CONFIG_BT_NIMBLE_ROLE_CENTRAL=n
+CONFIG_BT_NIMBLE_ROLE_OBSERVER=n
+
+# Default GAP name: replaced at boot by DEVICE_NAME (src/ble.c), "EDGE-<id>"
+CONFIG_BT_NIMBLE_SVC_GAP_DEVICE_NAME="ESP32-Custom"
+
+# --- Controller: BLE mode only ---
+CONFIG_BTDM_CTRL_MODE_BLE_ONLY=y
+CONFIG_BTDM_CTRL_MODE_BR_EDR_ONLY=n
+CONFIG_BTDM_CTRL_MODE_BTDM=n
+
+# --- Console: coloured log on UART0 (115200) ---
+CONFIG_LOG_DEFAULT_LEVEL_INFO=y
+CONFIG_LOG_COLORS=y
+
+# --- FATFS: 512-byte sectors (REQUIRED for SD cards) ---
+# With 4096 the card is readable only by the ESP32, NOT by a PC / USB reader.
+CONFIG_FATFS_SECTOR_512=y
+
+# --- FATFS: long file names (LFN) for session files like "activity_1.csv" ---
+# Without LFN, names are limited to the 8.3 format.
+CONFIG_FATFS_LFN_HEAP=y
+CONFIG_FATFS_MAX_LFN=255

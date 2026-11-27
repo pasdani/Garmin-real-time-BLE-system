@@ -1,0 +1,6 @@
+# FULL variant build.
+# Shared code in source/, variant constants in this folder.
+# Paths are relative to THIS file (variants/full/).
+project.manifest = manifest-full.xml
+base.sourcePath = ../../source;.
+base.resourcePath = ../../resources

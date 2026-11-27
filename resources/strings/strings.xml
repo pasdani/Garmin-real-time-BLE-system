@@ -1,0 +1,12 @@
+<strings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
+    <string id="AppNameFull">BLE-Full</string>
+    <string id="AppNameDelta">BLE-Delta</string>
+    <string id="AppNameBatch">BLE-Batch</string>
+    <string id="AppNameMulti">BLE-Multi</string>
+
+    <!-- Labels of the developer fields in the FIT file (Garmin Connect) -->
+    <string id="FitBatteryTitle">Watch Battery</string>
+    <string id="FitBatteryLabel">Batt</string>
+    <string id="FitPercentUnit">%</string>
+    <string id="FitVariantLabel">Var</string>
+</strings>

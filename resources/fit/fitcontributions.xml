@@ -1,0 +1,21 @@
+<fitContributions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
+    <!--
+        Garmin Connect display metadata for the developer fields created
+        with FitContributor.createField (see FitLogger.mc). The ids match the
+        field IDs used in the code: 0 = battery, 1 = variant.
+    -->
+    <fitField id="0"
+              displayInChart="true"
+              sortOrder="0"
+              precision="1"
+              chartTitle="@Strings.FitBatteryTitle"
+              dataLabel="@Strings.FitBatteryLabel"
+              unitLabel="@Strings.FitPercentUnit"
+              fillColor="#1F74FF" />
+    <fitField id="1"
+              displayInChart="false"
+              sortOrder="1"
+              precision="0"
+              dataLabel="@Strings.FitVariantLabel"
+              unitLabel="@Strings.FitVariantLabel" />
+</fitContributions>

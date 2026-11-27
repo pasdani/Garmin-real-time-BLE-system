@@ -1,0 +1,11 @@
+# MONITOR build (V5): device app, 4 values, alerts from the edges.
+# Uses source/ like the data fields, without the parts only they need
+# (:datafield: entry point, views, FitLogger, v3 and v4 radios, sampling of
+# the 12 values, colours): hence no FitContributor permission and a lighter
+# .prg. From resources/ it takes only the icon; source-monitor/ and
+# resources-monitor/ are seen only by this build.
+# Specification: docs/v5_monitoring.md. Paths are relative to THIS file.
+project.manifest = manifest-monitor.xml
+base.sourcePath = ../../source;../../source-monitor;.
+base.resourcePath = ../../resources/drawables;../../resources-monitor
+base.excludeAnnotations = datafield

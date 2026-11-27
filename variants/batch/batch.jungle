@@ -1,0 +1,6 @@
+# BATCH variant build.
+# Shared code in source/, variant constants in this folder.
+# Paths are relative to THIS file (variants/batch/).
+project.manifest = manifest-batch.xml
+base.sourcePath = ../../source;.
+base.resourcePath = ../../resources
